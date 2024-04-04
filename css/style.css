@@ -1,0 +1,78 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.container {
+  width: 100%;
+  background: #0d0024;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  gap: 100px;
+}
+.menu,
+.menu2 {
+  width: 200px;
+  height: 200px;
+  background: linear-gradient(to right, #e91e63, #f44336);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.menu div,
+.menu2 div {
+  width: 120px;
+  height: 120px;
+  margin: 40px;
+  position: relative;
+}
+.menu span,
+.menu2 span {
+  background: #fff;
+  width: 100%;
+  height: 10px;
+  border-radius: 5px;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: 0.5s;
+}
+.menu .line-1 {
+  transform: translate(-50%, -50px);
+}
+.menu .line-3 {
+  transform: translate(-50%, 40px);
+}
+.openmenu .line-1 {
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+.openmenu .line-3 {
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+.openmenu .line-2 {
+  width: 0;
+}
+.menu2 .line-1 {
+  width: 50%;
+  transform: translate(-100%, -50px);
+}
+.menu2 .line-3 {
+  width: 50%;
+  transform: translate(0%, 50px);
+}
+
+.openmenu2 .line-1 {
+  transform: translate(0, 0) rotate(-45deg);
+  transform-origin: 0 0;
+}
+.openmenu2 .line-3 {
+  transform: translate(-100%, 0px) rotate(-45deg);
+  transform-origin: 100% 0;
+}
+.openmenu2 .line-2 {
+  transform: translate(-50%, -50%) rotate(45deg);
+}
